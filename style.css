@@ -65,7 +65,7 @@ h3 { font-size: 1.1rem; }
 @keyframes pop { from { transform: scale(.6); opacity: 0; } }
 
 /* Hero */
-.hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center; min-height: calc(100vh - 60px); }
+.hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center; min-height: calc(50vh - 60px); }
 .hello { color: var(--teal); font-weight: 500; margin-bottom: 4px; }
 .hero h1 { font-size: clamp(2.8rem, 8vw, 5rem); line-height: 1; font-weight: 800; }
 .lead { margin: 20px 0 30px; font-size: 1.15rem; color: var(--muted); max-width: 46ch; }
