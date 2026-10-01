@@ -5,8 +5,8 @@ const lines = [
   [["public class ", "k"], ["Hariom", "t"], [" {", ""]],
   [["  String ", "t"], ["role = ", ""], ['"Java Backend Developer"', "s"], [";", ""]],
   [["  String[] ", "t"], ["stack = {", ""], ['"Java", "JDBC", "MySQL", "AWS"', "s"], ["};", ""]],
-  [["  String ", "t"], ["college = ", ""], ['"CSMSS Chh. Shahu College"', "s"], [";", ""]],
-  [["  String ", "t"], ["interests = ", ""], ['"ML, DSA, Cloud"', "s"], [";", ""]],
+  [["  String ", "t"], ["college = ", ""], ['"CSMSS CSCOE"', "s"], [";", ""]],
+  [["  String ", "t"], ["interests = ", ""], ['"Linux, ML, Cloud, DevOps"', "s"], [";", ""]],
   [["  boolean ", "k"], ["openToWork = ", ""], ["true", "k"], [";", ""]],
   [["}", ""]],
 ];

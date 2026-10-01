@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hariom Jadhav | Java Backend Developer</title>
+  <title>Hariom Jadhav | Portfolio</title>
   <meta name="description" content="Portfolio of Hariom Jadhav, Java backend developer and Electronics & Computer Engineering student.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +14,13 @@
   <div class="progress" id="progress"></div>
 
   <header class="nav">
-    <a href="#home" class="logo">Hariom's<span> Website</span></a>
+    <a href="#home" class="logo">Hariom<span> Portfolio</span></a>
     <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
     <nav id="menu">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#activities">Activities</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -28,9 +29,13 @@
   <main>
     <section id="home" class="hero">
       <div class="hero-text">
+        <div class="avatar">
+          <img src="https://drive.google.com/uc?export=view&id=1ndNHvbRoD5miIzr_7OmoL3rl7mL3SfBf" alt="Photo of Hariom Jadhav" onerror="this.style.display='none'; this.parentElement.querySelector('.avatar-fallback').style.display='grid';">
+          <span class="avatar-fallback" aria-hidden="true">HJ</span>
+        </div>
         <p class="hello">Hi, I'm</p>
         <h1>Hariom Jadhav</h1>
-        <p class="lead">I build Java backend applications with JDBC and MySQL, and I'm exploring AWS and Linux (RHCSA).</p>
+        <p class="lead">I build Java backend applications with JDBC and MySQL, and I'm exploring Linux and AWS.</p>
         <div class="actions">
           <a class="btn primary" href="#projects">See my projects</a>
           <a class="btn" href="#contact">Get in touch</a>
@@ -44,12 +49,15 @@
 
     <section id="about" class="section reveal">
       <h2>About me</h2>
-      <p>I'm a final-year Electronics and Computer Engineering student in Chh. Sambhajinagar. I enjoy turning Core Java concepts (OOP, collections, multithreading, exception handling and file handling) into working applications backed by a database.</p>
-      <p>Outside of Java, I'm interested in machine learning, cloud technologies, and solving problems with data structures and algorithms.</p>
+      <p>I'm a final-year Electronics and Computer Engineering student with a strong interest in software development, focused on Java. I've built projects using Core Java concepts such as OOP, arrays, exception handling, collections, multithreading and file handling, and I'm now learning Linux and AWS.</p>
+      <p>I've developed a Banking Management System using Java, JDBC, and MySQL, applying collections and exception handling. I also built an Expense Tracker using Java, JDBC, and MySQL, along with HTML and CSS to create a simple user interface for displaying transactions.</p>
+      <p>I also worked on a Hydroseeding Smart Agriculture Advisor, where my role was to train the machine learning model for soil classification.</p>
+      <p>Beyond software, I built an Arduino-based shoe polishing machine and was a member of the steering department of an autonomous vehicle team, contributing to the development of a steer-by-wire system.</p>
       <ul class="stats">
-        <li><strong>4</strong> projects built</li>
-        <li><strong>3</strong> HackerRank certificates</li>
+        <li><strong>5</strong> projects built</li>
+        <li><strong>4</strong> competitions &amp; events</li>
         <li><strong>75%</strong> NPTEL Java score</li>
+        <li><strong>70%</strong> NPTEL Internet of Things</li>
       </ul>
     </section>
 
@@ -58,19 +66,22 @@
       <div class="skill-grid">
         <div>
           <h3>Java</h3>
-          <div class="chips"><span>OOP</span><span>Collections</span><span>Multithreading</span><span>Exception Handling</span><span>File Handling</span><span>JDBC</span></div>
+          <div class="chips"><span>OOP</span><span>Arrays</span><span>Collections</span><span>Multithreading</span><span>Exception Handling</span><span>File Handling</span><span>JDBC</span></div>
         </div>
+        
         <div>
-          <h3>Database</h3>
-          <div class="chips"><span>MySQL</span><span>SQL</span><span>DBMS</span></div>
+          <h3>Databases</h3>
+          <div class="chips"><span>MySQL</span><span>SQL</span><span>MongoDB</span><span>DBMS</span></div>
         </div>
         <div>
           <h3>Cloud &amp; Linux</h3>
-          <div class="chips"><span>AWS EC2</span><span>AWS S3</span><span>Linux</span><span>RHEL</span></div>
+          <div class="chips"><span>AWS EC2</span><span>AWS S3</span><span>Linux</span><span>RHCSA</span></div>
         </div>
+       
+        
         <div>
-          <h3>Web &amp; Tools</h3>
-          <div class="chips"><span>HTML</span><span>CSS</span><span>Git</span><span>GitHub</span><span>VS Code</span><span>Eclipse</span></div>
+          <h3>Tools</h3>
+          <div class="chips"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Eclipse</span></div>
         </div>
       </div>
     </section>
@@ -84,19 +95,52 @@
           <div class="chips small"><span>Java</span><span>JDBC</span><span>MySQL</span></div>
         </article>
         <article class="project">
-          <h3>Expense Tracker</h3>
+          <h3>Expense Tracker System</h3>
           <p>Tracks income, expenses and financial records. Stores data through JDBC and MySQL, with a simple HTML and CSS interface to view transactions.</p>
           <div class="chips small"><span>Java</span><span>JDBC</span><span>MySQL</span><span>HTML</span><span>CSS</span></div>
         </article>
         <article class="project">
-          <h3>Hydroseeding Smart Advisor</h3>
-          <p>A machine learning model that classifies soil type from images and checks if it suits hydroseeding. The web app then suggests soil improvements.</p>
-          <div class="chips small"><span>AI / ML</span><span>Web app</span></div>
+          <h3>Smart Hydroseeding Advisor</h3>
+          <p>A supervised machine learning model that classifies soil type from images and checks if it suits hydroseeding. The web app then suggests soil improvements. Presented at MSME 2026.</p>
+          <div class="chips small"><span>MERN</span><span>AI / ML</span><span>Supervised learning</span></div>
         </article>
         <article class="project">
           <h3>Library Management System</h3>
           <p>Manages books, members and book transactions. Built with CRUD operations in JDBC and MySQL, plus collections and exception handling.</p>
           <div class="chips small"><span>Java</span><span>JDBC</span><span>MySQL</span><span>Collections</span></div>
+        </article>
+        <article class="project">
+          <h3>Automatic Shoe Polishing Machine</h3>
+          <p>A hardware project that detects a shoe and polishes it automatically, using ultrasonic sensors, a motor and a relay controlled from Arduino code.</p>
+          <div class="chips small"><span>Arduino IDE</span><span>C</span><span>Ultrasonic sensor</span><span>Motor</span><span>Relay</span></div>
+        </article>
+        <article class="project">
+          <h3>Attendance Monitoring System</h3>
+          <p>An attendance system that uses QR codes to record who is present. Built for Dipex 2025.</p>
+          <div class="chips small"><span>QR code</span><span>Dipex 2025</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="activities" class="section reveal">
+      <h2>Team &amp; competitions</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>SAE India, Team Samskara</h3>
+          <p>Member of the steering department for A-BAJA, an autonomous vehicle project.</p>
+          <div class="chips small"><span>Autonomous vehicle</span><span>Steering</span></div>
+        </article>
+        <article class="project">
+          <h3>Smart India Hackathon 2025</h3>
+          <p>Took part in the national-level hackathon.</p>
+        </article>
+        <article class="project">
+          <h3>Avishkar 2025</h3>
+          <p>Presented the Expense Tracker System.</p>
+        </article>
+        <article class="project">
+          <h3>MSME 2026</h3>
+          <p>Presented the Smart Hydroseeding Advisor.</p>
         </article>
       </div>
     </section>
@@ -110,13 +154,23 @@
           <p class="muted">Expected May 2027 &middot; CGPA 6.58 / 10</p>
         </div>
         <div class="tl-item">
-          <h3>NPTEL: Programming in Java</h3>
-          <p class="muted">Scored 75%</p>
+          <h3>12th and 10th</h3>
+          <p>New Highschool Lasur Station, Chh. Sambhajinagar</p>
+          <p class="muted">12th: 65.83% &middot; 10th: 79%</p>
         </div>
         <div class="tl-item">
-          <h3>HackerRank certificates</h3>
-          <p>Java (Basic), Python (Basic), SQL (Basic), all verified.</p>
+          <h3>NPTEL courses</h3>
+          <p>Programming in Java: 75% (Oct 2025)</p>
+          <p>Introduction to Internet of Things: 70% (Apr 2026)</p>
+        </div>
+        <div class="tl-item">
+          <h3>HackerRank</h3>
+          <p>Java (Basic), SQL (Basic), Python (Basic)</p>
           <p class="muted">Badges: Java 3-star, SQL 2-star</p>
+        </div>
+        <div class="tl-item">
+          <h3>Google</h3>
+          <p>Introduction to Generative AI &middot; Gemini in Google Drive</p>
         </div>
       </div>
     </section>
@@ -129,8 +183,8 @@
         <a class="btn" href="tel:+919172151585">+91 91721 51585</a>
       </div>
       <p class="links">
-        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="#" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/hariom-jadhav-1155b329a" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Hariom-Jadhav" target="_blank" rel="noopener">GitHub</a>
       </p>
     </section>
   </main>

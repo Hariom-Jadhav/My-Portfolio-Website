@@ -55,8 +55,14 @@ nav a:hover, nav a.active { color: var(--teal); }
 /* Layout */
 .section, .hero { max-width: var(--max); margin: 0 auto; padding: 84px 20px; }
 .section h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 22px; }
-.section p { max-width: 65ch; color: var(--muted); margin-bottom: 14px; }
+.section p { max-width: ch; color: var(--muted); margin-bottom: 14px; }
 h3 { font-size: 1.1rem; }
+
+/* Profile photo */
+.avatar { position: relative; width: 132px; height: 132px; border-radius: 50%; margin-bottom: 22px; display: grid; place-items: center; background: var(--card); border: 4px solid var(--teal); box-shadow: 0 0 0 6px var(--paper), 0 0 0 8px var(--sun); overflow: hidden; animation: pop .8s cubic-bezier(.2, 1.4, .4, 1) both; }
+.avatar-fallback { display: none; place-items: center; width: 100%; height: 100%; font: 800 2.4rem "Bricolage Grotesque", sans-serif; color: var(--teal); background: linear-gradient(135deg, rgba(15,139,141,.12), rgba(242,177,52,.18)); }
+.avatar img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+@keyframes pop { from { transform: scale(.6); opacity: 0; } }
 
 /* Hero */
 .hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center; min-height: calc(100vh - 60px); }
@@ -91,7 +97,7 @@ h3 { font-size: 1.1rem; }
 .stats strong { display: block; font: 800 1.8rem "Bricolage Grotesque", sans-serif; color: var(--teal); }
 
 /* Skills */
-.skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 28px; }
+.skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 60px; }
 .skill-grid h3 { margin-bottom: 10px; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chips span { background: var(--card); border: 1px solid var(--line); padding: 5px 13px; border-radius: 99px; font-size: .88rem; transition: background .2s, color .2s, border-color .2s; }
